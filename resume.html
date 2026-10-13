@@ -7,19 +7,12 @@
     <title>Resume - Chinmai Sagar A.V</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Exact A4 sheet layout for browser and print */
-        @page {
-            size: A4;
-            margin: 0;
-        }git config --global --list
-
         body {
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f3f4f6;
             margin: 0;
             padding: 24px 0;
             color: #333333;
-            -webkit-print-color-adjust: exact;
         }
 
         .resume-page {
@@ -32,7 +25,7 @@
             box-sizing: border-box;
         }
 
-        /* Clean replacement for PNG image borders */
+        /* Lines */
         .section-title {
             font-size: 15px;
             font-weight: 700;
@@ -48,8 +41,7 @@
             height: 2.5px;
             background-color: #888e96;
             filter: blur(0.6px);
-            /* Adjust between 0.4px and 1px for subtler or stronger blur */
-            margin: 16px 0;
+            margin: 0px 0px 10px 0px;
         }
 
         ul {
@@ -68,21 +60,6 @@
 
         li strong {
             color: #111827;
-        }
-
-        @media print {
-            body {
-                background-color: #ffffff;
-                padding: 0;
-            }
-
-            .resume-page {
-                box-shadow: none;
-                margin: 0;
-                width: 100%;
-                min-height: 100%;
-                padding: 32px 40px;
-            }
         }
     </style>
 </head>
@@ -228,16 +205,24 @@
             <div class="section-title">EDUCATION</div>
             <hr class="section-divider">
             <div class="grid grid-cols-2 gap-6 text-[12.5px]">
-                <div class="border-l-2 border-gray-200 pl-3">
+                <div class="border-solid">
                     <p class="font-bold text-gray-800">Bachelor of Computer Applications (BCA)</p>
-                    <p class="text-blue-600 text-[11.5px] font-medium">DRBCCC Hindu College | University of Madras</p>
+                    <p class="text-blue-600 text-[11.5px] font-medium"><a href="https://www.drbccchinducollege.edu.in/"
+                            target="_blank" rel="noopener noreferrer">
+                            DRBCCC Hindu College | University of Madras
+                        </a>
+                    </p>
                     <p class="text-gray-500 text-[11px] font-semibold">May 2024</p>
                     <p class="text-gray-700 font-semibold mt-1">Score: <span
                             class="text-gray-900 font-normal">80.8%</span></p>
                 </div>
-                <div class="border-l-2 border-gray-200 pl-3">
+                <div class="border-solid">
                     <p class="font-bold text-gray-800">Higher Secondary Education</p>
-                    <p class="text-blue-600 text-[11.5px] font-medium">Sri Venkateswara Met. Hr. Sec. School</p>
+                    <p class="text-blue-600 text-[11.5px] font-medium">
+                        <a href="https://srivenkateshwaramhss.com/" target="_blank" rel="noopener noreferrer">
+                            Sri Venkateswara Met. Hr. Sec. School
+                        </a>
+                    </p>
                     <p class="text-gray-500 text-[11px] font-semibold">April 2021</p>
                     <p class="text-gray-700 font-semibold mt-1">Score: <span
                             class="text-gray-900 font-normal">81%</span></p>
